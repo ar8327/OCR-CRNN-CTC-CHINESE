@@ -28,3 +28,6 @@
 ##### About other files in tools/
 + 'tools/dictionary_cut.py' is for enhancing samples in dictionaries. It will cut a single word many times in order to increase number of words in the dictionary.
 + 'tools/merge_dictionaries.py' is for merging dictionaries into one.
+
+##### Prediction
++ Please see `test.py` for prediction example
