@@ -30,5 +30,5 @@
 + You may consider changing `beam_width` to 20 in order to get a better overall prediction accuracy.
 
 ### About other files in tools/
-+ 'tools/dictionary_cut.py' is for enhancing samples in dictionaries. It will cut a single word many times in order to increase number of words in the dictionary.
-+ 'tools/merge_dictionaries.py' is for merging dictionaries into one.
++ `tools/dictionary_cut.py` is for enhancing samples in dictionaries. It will cut a single word many times in order to increase number of words in the dictionary.
++ `tools/merge_dictionaries.py` is for merging dictionaries into one.
