@@ -7,7 +7,7 @@ import random
 import core.util
 from tensorflow.python.framework import graph_util
 
-T_DEBUG = True
+T_DEBUG = False
 
 os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 

@@ -14,7 +14,7 @@ def ctc_loss_layer(sequence_labels, rnn_logits, sequence_length): #CTC Loss
     #
 
 
-def decode_rnn_results_ctc_beam(results, seq_len,beam_width=50,top_paths=1): #CTC Beam Searcher
+def decode_rnn_results_ctc_beam(results, seq_len,beam_width=1,top_paths=1): #CTC Beam Searcher
     #
     # tf.nn.ctc_beam_search_decoder
     #

@@ -12,7 +12,7 @@ alphabet_blank = '`'
 model_recog_name = 'model_recog'
 valid_freq = 100
 #
-height_norm = 20
+height_norm = 36
 TRAINING_STEPS = 100000
 BATCH_SIZE = 258
 #
