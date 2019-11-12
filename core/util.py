@@ -69,7 +69,15 @@ def predict(graph=None,image_in=None):
         img_data = np.array(img, dtype = np.float32)/255  # (height, width, channel)
         img_data = [ img_data[:,:,0:3] ]
     else:
-        pass
+        img = image_in
+        img_size = (image_in.shape[1], image_in.shape[0])
+        if img_size[1] != meta.height_norm:
+            w = int(img_size[0] * meta.height_norm * 1.0 / img_size[1])
+            img = cv2.resize(img, (w, meta.height_norm), 0, 0)
+        img_data = np.array(img, dtype=np.float32) / 255  # (height, width, channel)
+        img_data = [img_data[:, :, 0:3]]
+        img_data = img_data
+
     w_arr = [img_data[0].shape[1]]  # batch, height, width, channel
     with tf.Session(graph=graph) as sess:
         var_list = tf.trainable_variables()
