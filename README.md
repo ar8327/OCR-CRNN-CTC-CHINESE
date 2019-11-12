@@ -23,7 +23,7 @@
 + Get some Chinese fonts (like Microsoft YaHei) and change `list_fonts` in 'tools/data_generators.py'
 + Change `words_file` in 'tools/data_generator.py' to your dictionary file
 + Follow steps in Fast example to generate some samples
-+ You may consider change `beam_width` to 20 in order to get a better overall prediction accuracy.
++ You may consider changing `beam_width` to 20 in order to get a better overall prediction accuracy.
 
 ### About other files in tools/
 + 'tools/dictionary_cut.py' is for enhancing samples in dictionaries. It will cut a single word many times in order to increase number of words in the dictionary.
